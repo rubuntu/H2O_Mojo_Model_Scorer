@@ -10,7 +10,7 @@
 		<servlet-name>service</servlet-name>
 		<display-name>ModelScorerService</display-name>
 		<description></description>
-		<servlet-class>com.arandu.mojo_scorer.ModelScorerService</servlet-class>
+		<servlet-class>mojo_scorer.ModelScorerService</servlet-class>
 	</servlet>		
 	
 	
@@ -30,16 +30,26 @@
 			<param-value>false</param-value>
 		</init-param>
 	</servlet>
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<display-name>Index</display-name>
+		<description></description>
+		<servlet-class>mojo_scorer.Index</servlet-class>
+	</servlet>
 	
 	
 	<servlet-mapping>
 		<servlet-name>webdav</servlet-name>
-		<url-pattern>/webdav/*</url-pattern>
+		<url-pattern>/mojos/*</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
 		<servlet-name>service</servlet-name>
 		<url-pattern>/model/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 </web-app>

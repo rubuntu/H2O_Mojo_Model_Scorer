@@ -2,8 +2,9 @@ var csv = require("fast-csv");
 
 var formurlencoded = require('form-urlencoded');
 
-var uri = "http://10.118.1.100:8080/mojo_scorer/model/scoring_pymes_sm_v2"
-//var uri = "http://localhost:8080/mojo_scorer/model/scoring_pymes_sm_v2"
+//var uri = "http://localhost:8080/mojo_scorer/model/BadLoanModel"
+var uri = "http://localhost:8080/mojo_scorer/model/InterestRateModel"	
+	 
 	
 var request = require('request');
 
@@ -35,7 +36,7 @@ csv.fromPath("eval.csv", {
 			
 			fs.appendFile('eval-scored.csv', '"'+data.id+'","'+data.score+'","'+data.error_msg+'"\n', function (err) {
 			  if (err) {
-			    console.log('Ocurrio un error');
+			    console.log('Error');
 			  } else{				  
 				  console.log(new Date(Date.now()).toLocaleString(),' data:', data);	    
 			  }
@@ -43,7 +44,7 @@ csv.fromPath("eval.csv", {
 
 		}
 		catch(err) {
-			console.log(new Date(Date.now()).toLocaleString(),'Ocurrio un error');
+			console.log(new Date(Date.now()).toLocaleString(),'Error');
 		}
 		
 	});
