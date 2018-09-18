@@ -1,4 +1,4 @@
-# h2o-mojo-model-scorer
+# H2O_MOJO_Model_Scorer
 H2O's Mojo Model REST web service for real-time scoring
 
 You could publish your XGBoost and Stacked Ensembles H2O's mojo models as a REST API  
