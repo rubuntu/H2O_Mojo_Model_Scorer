@@ -53,5 +53,5 @@ csv.fromPath("eval.csv", {
 	//process.exit();
 		
 }).on("end", function() {
-	console.log("Finalizado");
+	console.log("End");
 });
