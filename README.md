@@ -34,7 +34,7 @@ Based on H2O's app-consumer-loan sample
 
 ### Test with Node.js 
 Sample in https://github.com/rubuntu/ho2-mojo-model-scorer/tree/master/mojo_scorer/src/test/node  
-Using endpoint "/mojo_scorer/model/InterestRateModel for Mojo model file: InterestRateModel.zip
+Using endpoint */mojo_scorer/model/InterestRateModel* for Mojo model file: *InterestRateModel.zip*
 
 ```
 { node }  » npm update
