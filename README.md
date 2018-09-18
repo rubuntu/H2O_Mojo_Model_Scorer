@@ -1,8 +1,8 @@
-# ho2-mojo-model-scorer
+# h2o-mojo-model-scorer
 H2O's Mojo Model REST web service for real-time scoring
 
 You could publish your XGBoost and Stacked Ensembles H2O's mojo models as a REST API  
-Download from https://github.com/rubuntu/ho2-mojo-model-scorer/raw/master/mojo_scorer/target/mojo_scorer.war
+Download from https://github.com/rubuntu/h2o-mojo-model-scorer/raw/master/mojo_scorer/target/mojo_scorer.war
 
 ### Inspired by
 * https://github.com/openscoring/openscoring
@@ -11,10 +11,10 @@ Download from https://github.com/rubuntu/ho2-mojo-model-scorer/raw/master/mojo_s
 ### Scripts for generate sample models
 Based on H2O's app-consumer-loan sample
 * R  
-  https://raw.githubusercontent.com/rubuntu/ho2-mojo-model-scorer/master/mojo_scorer/script.Rmd
+  https://raw.githubusercontent.com/rubuntu/h2o-mojo-model-scorer/master/mojo_scorer/script.Rmd
 
 * Python  
-  https://raw.githubusercontent.com/rubuntu/ho2-mojo-model-scorer/master/mojo_scorer/script.py
+  https://raw.githubusercontent.com/rubuntu/h2o-mojo-model-scorer/master/mojo_scorer/script.py
 
 ## REST API 
 
@@ -36,8 +36,8 @@ Based on H2O's app-consumer-loan sample
 
 
 ### Test with Node.js 
-Sample in https://github.com/rubuntu/ho2-mojo-model-scorer/tree/master/mojo_scorer/src/test/node
-Using endpoint "http://localhost:8080/mojo_scorer/model/InterestRateModel for Mojo model file: InterestRateModel.zip
+Sample in https://github.com/rubuntu/h2o-mojo-model-scorer/tree/master/mojo_scorer/src/test/node
+Using endpoint /mojo_scorer/model/InterestRateModel for Mojo model file: InterestRateModel.zip
 
 ```
 { node }  » npm update
@@ -164,5 +164,4 @@ Percentage of the requests served within a certain time (ms)
  100%     17 (longest request)
 
 ```
-On PC with a 3.4 GHz Intel Core i7 3rd generation this run gives:
-throughput of 3918 requests / second
+On a PC with a 3.4 GHz Intel Core i7 3rd generation this run gives a throughput of 3918 requests / second and 2.042 ms of latency.
