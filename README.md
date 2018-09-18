@@ -1,7 +1,8 @@
 # ho2-mojo-model-scorer
 H2O's Mojo Model REST web service for real-time scoring
 
-You could publish your XGBoost and Stacked Ensembles H2O's mojo models as a REST API
+You could publish your XGBoost and Stacked Ensembles H2O's mojo models as a REST API  
+Download from https://github.com/rubuntu/ho2-mojo-model-scorer/raw/master/mojo_scorer/target/mojo_scorer.war
 
 ### Inspired by
 * https://github.com/openscoring/openscoring
