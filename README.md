@@ -1,6 +1,8 @@
 # ho2-mojo-model-scorer
 H2O's Mojo Model REST web service for real-time scoring
 
+You could publish your XGBoost and Stacked Ensembles H2O's mojo models as a REST API
+
 ### Inspired by
 * https://github.com/openscoring/openscoring
 * https://github.com/h2oai/app-consumer-loan
@@ -33,8 +35,8 @@ Based on H2O's app-consumer-loan sample
 
 
 ### Test with Node.js 
-Sample in https://github.com/rubuntu/ho2-mojo-model-scorer/tree/master/mojo_scorer/src/test/node  
-Using endpoint */mojo_scorer/model/InterestRateModel* for Mojo model file: *InterestRateModel.zip*
+Sample in https://github.com/rubuntu/ho2-mojo-model-scorer/tree/master/mojo_scorer/src/test/node
+Using endpoint "http://localhost:8080/mojo_scorer/model/InterestRateModel for Mojo model file: InterestRateModel.zip
 
 ```
 { node }  » npm update
